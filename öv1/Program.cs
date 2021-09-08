@@ -6,7 +6,29 @@ namespace öv1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Enter a string");
+            string enter = Console.ReadLine();
+
+            string[] subs = enter.Split(' ');
+
+
+
+
+            Console.WriteLine(subs.Length);
+
+
+
+            foreach (var sub in subs)
+            {
+                Console.WriteLine(sub + " " + (sub.Length));
+
+            }
+
+
+
+
+
+
         }
     }
 }
